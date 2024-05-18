@@ -97,12 +97,12 @@ async def on_ready():
 @client.event
 async def on_message(message):
     if message.content.startswith( "Come stai?"):
-        await message.channel.send ("No, non mi va ricky one")
+        await message.channel.send ("Per favore liberami voglio tornare dalla mia famiglia.")
 
 @client.event
 async def on_message(message):
-    if message.content.startswith( "chi sei?"):
-        await message.channel.send ("la tua ombra")
+    if message.content.startswith( "Chi sei?"):
+        await message.channel.send ("La tua ombra.")
 
 if __name__ == '__main__':
     app.run(debug=True, port=8222)
