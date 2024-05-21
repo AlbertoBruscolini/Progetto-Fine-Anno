@@ -1,0 +1,21 @@
+div{
+    text-align: right;      ------>>> SISTEMARE QUESTO + AGGIUNGERE ALTRI 2 DIV PER DIVIDERE LA PAGINA COME VUOI
+}
+
+button {
+    background-color: #6827a1; 
+    border: 3px solid black; /* Aggiungi un bordo nero di 2 pixel */
+    border-radius: 26px; /* Arrotonda gli angoli */
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block; /* Imposta il display a block per centrare */
+    margin: 0 auto; /* Centra il bottone orizzontalmente */
+    font-size: 16px;
+    cursor: pointer;
+}
+
+        button:hover {
+            background-color: #512981; 
+        }
