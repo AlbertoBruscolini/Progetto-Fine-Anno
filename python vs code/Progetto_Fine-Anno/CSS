@@ -1,5 +1,9 @@
-div{
-    text-align: right;      ------>>> SISTEMARE QUESTO + AGGIUNGERE ALTRI 2 DIV PER DIVIDERE LA PAGINA COME VUOI
+.header{
+    text-align: right;
+}
+
+.square{
+    
 }
 
 button {
