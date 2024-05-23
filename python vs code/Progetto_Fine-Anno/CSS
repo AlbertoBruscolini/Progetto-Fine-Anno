@@ -1,17 +1,26 @@
 header{
     text-align: center;
+    
 }
 
-.1{
-    text-align: left;
-}
-
-.2{
+.main{
     text-align: right;
+    block-size: 200px;
+    font-size: large;
 }
+
+.block{
+    text-align: left;
+    block-size: 60px;
+    font-size: x-large;
+}
+
+.flex {max-width: 10%}
+.flexx {max-width: 10%}
 
 button {
-    background-color: #6827a1; 
+    
+    background-color: blueviolet; 
     border: 3px solid black; /* Aggiungi un bordo nero di 2 pixel */
     border-radius: 26px; /* Arrotonda gli angoli */
     color: white;
@@ -20,10 +29,10 @@ button {
     text-decoration: none;
     display: block; /* Imposta il display a block per centrare */
     margin: 0 auto; /* Centra il bottone orizzontalmente */
-    font-size: 16px;
+    font-size: 20px;
     cursor: pointer;
 }
 
         button:hover {
-            background-color: #512981; 
+            background-color:   blueviolet; 
         }
