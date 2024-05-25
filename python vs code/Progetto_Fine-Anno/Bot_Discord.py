@@ -6,7 +6,7 @@ from discord.ext import commands, tasks
 import pytz
 import requests
 from dotenv import load_dotenv
-from flask import Flask, render_template
+#from flask import Flask, render_template
 from ast import alias
 
 import asyncio
@@ -59,14 +59,14 @@ TOKEN = os.getenv('DISCORD_TOKEN')
 
 client.run(TOKEN)
 
-app = Flask(__name__)
-@app.route("/")
-def index():
-    return render_template("pagina.html"),("PROGETTO.css")
+#app = Flask(__name__)
+#@app.route("/")
+#def index():
+ #   return render_template("pagina.html"),("PROGETTO.css")    ---->>> FLASK FUNZIONA MA NON E' NECESSARIO AL CODICE PYTHON, PERCIO HTML  E CSS RESTANO A PARTE
     
 
-if __name__ == '__main__':
-    app.run(debug=True, port=8222)
+#if __name__ == '__main__':
+ #   app.run(debug=True, port=8222)
 
 
 
