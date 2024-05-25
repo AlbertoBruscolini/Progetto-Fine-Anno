@@ -10,10 +10,10 @@ Reagisce a domande come "Chi sei?", "Come stai?", "Data di creazione", "Come fun
 Fornisce link a Github, Youtube, Google e Discord quando vengono richieste queste informazioni.
 Librerie utilizzate
 
-# Il codice importa diverse librerie Python:#
+# Il codice importa diverse librerie Python:
 
 ## os: 
-Per interagire con il sistema operativo (ad esempio, per caricare il token Discord da un file .env).
+(import os): Per interagire con il sistema operativo (ad esempio, per caricare il token Discord da un file .env).
 ## discord: 
 Libreria fondamentale per creare bot Discord.
 ## discord.ext.commands, discord.ext.tasks: 
