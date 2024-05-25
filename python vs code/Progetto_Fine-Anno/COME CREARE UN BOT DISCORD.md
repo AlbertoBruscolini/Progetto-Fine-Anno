@@ -7,12 +7,13 @@ Assicurati di avere Python installato sul tuo sistema. Puoi installare discord.p
 ```
 ## Step 2: Creazione bot Discord
 Vai su Discord Developer Portal e crea una nuova applicazione. Puoi settare il bot come ti pare, l’importante e generare l’URL da copia incollare in una nuova finestra, consentendoti di collegare il bot al tuo account discord e aggiungerlo a qualunque server.  Dopodiché, sotto l'opzione "Bot" nel pannello di sinistra, crea un nuovo bot e ottieni il suo token.
+![image](https://github.com/AlbertoBruscolini/Progetto-Fine-Anno/assets/147493117/13434318-4522-4611-8daf-f6ebcf66e4fb)
+questa sarà la tua schermata (in questo caso con il mio bot).
 
-questa sarà la tua schermata (in questo caso con il mio bot)
 Codifica:
 un esempio di codifica è quella illustrata nel file python contenente il codice per il bot.
  
-![image](https://github.com/AlbertoBruscolini/Progetto-Fine-Anno/assets/147493117/13434318-4522-4611-8daf-f6ebcf66e4fb)
+
 
 ## Step 3: Esecuzione codice
 Salva lo script Python in un file, ad esempio 	bot.py, e eseguilo da terminale o prompt dei comandi:
