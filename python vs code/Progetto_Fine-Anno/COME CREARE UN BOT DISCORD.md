@@ -30,3 +30,11 @@ es) |python bot_discord.py
 Per far funzionare il tuo bot su un server Discord, devi aggiungere il bot al server. Vai sulla pagina di autorizzazione del tuo bot nel pannello di sviluppo Discord e ottieni l'URL di autorizzazione. Accedi con un account che ha il permesso di aggiungere bot ai server e segui le istruzioni per aggiungere il bot al server.
 Copia l'ID del tuo bot Discord dall'interfaccia del Developer Portal.
 Visita l'URL seguente nel tuo browser web, sostituendo <BOT_CLIENT_ID> con l'ID del tuo bot:
+	
+### esempio di ID/URL generato:
+	https://discord.com/oauth2/authorize?client_id=<BOT_CLIENT_ID>&scope=bot
+	
+Una volta aggiunto al server, il bot risponderà ai comandi che hai definito nel codice.
+
+## Step 5: Espandi il Bot
+Ora che hai creato un bot base, puoi espanderlo aggiungendo ulteriori comandi, gestendo eventi, utilizzando database e altro ancora. Assicurati di leggere la documentazione di discord.py per sfruttare al meglio tutte le funzionalità offerte dalla libreria.
