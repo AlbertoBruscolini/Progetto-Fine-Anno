@@ -13,7 +13,7 @@ Librerie utilizzate
 # Il codice importa diverse librerie Python:
 
 ## os: 
-(import os): Per interagire con il sistema operativo (ad esempio, per caricare il token Discord da un file .env).
+('import os'): Per interagire con il sistema operativo (ad esempio, per caricare il token Discord da un file .env).
 ## discord: 
 Libreria fondamentale per creare bot Discord.
 ## discord.ext.commands, discord.ext.tasks: 
