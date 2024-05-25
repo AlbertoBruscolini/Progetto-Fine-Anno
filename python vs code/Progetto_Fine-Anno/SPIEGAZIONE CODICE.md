@@ -31,7 +31,7 @@ Per gestire codice asincrono.
 ## datetime: 
 Per lavorare con date e orari.
 
-# Struttura del codice#
+# Struttura del codice
 
 ## Intents:
 
@@ -53,7 +53,7 @@ Se il messaggio inizia con "Time?", risponde con l'ora corrente.
 Risponde a domande e richieste specifiche con messaggi predefiniti.
 ## Caricamento del Token:
 
-Carica il token Discord dal file .env.
-## Avvio del Bot:
+Carica il token Discord dal file .env., per poi avviare il bot utilizzando il token.
 
-Avvia il bot utilizzando il token.
+
+
