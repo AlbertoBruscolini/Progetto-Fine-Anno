@@ -17,11 +17,13 @@ un esempio di codifica è quella illustrata nel file python contenente il codice
 
 
 ## Step 3: Esecuzione codice
-Salva lo script Python in un file, ad esempio 	bot.py, e eseguilo da terminale o prompt dei comandi:
-	''Copy code''
+Salva il codice Python in un file, ad esempio ### bot.py ###, e eseguilo da terminale o prompt dei comandi:
 ```python	
- python (nome del file)
-	es) |python bot_discord.py
+python (nome del file)
+poi|
+   |
+   /
+es) |python bot_discord.py
 ```
 
 ## Step 4: Aggiungi il Bot al tuo server Discord
