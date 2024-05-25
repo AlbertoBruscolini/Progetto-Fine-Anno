@@ -1,2 +1,2 @@
 # Progetto-Fine-Anno
-creazione di un progetto scolastico di fine anno utilizzando python principalmente.
+creazione di un bot di discord utilizzando python, html e css
