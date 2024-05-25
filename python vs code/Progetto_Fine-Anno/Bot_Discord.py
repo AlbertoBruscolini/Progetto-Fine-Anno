@@ -2,113 +2,72 @@
 #!!AVVIARE FILE IN AMBIENTE VIRTUALE E SCARICARE I DOVUTI MODULI!!
 import os
 import discord
-
+from discord.ext import commands, tasks
+import pytz
+import requests
 from dotenv import load_dotenv
 from flask import Flask, render_template
+from ast import alias
 
-
-import requests
-import discord
-from discord.ext import commands
-import youtube_dl
-from discord_player import Player, FFmpegAudioSource
 import asyncio
+from datetime import datetime
 
 
-
-app = Flask(__name__)
-
-@app.route("/")
-def index():
-    return render_template("pagina.html")
-
-
-# Funzione per cercare una canzone su YouTube
-async def search_song(search):
-    with youtube_dl.YoutubeDL({'format': 'bestaudio/best', 'noplaylist': True}) as ydl:
-        info = ydl.extract_info(f"ytsearch:{search}", download=False)['entries'][0]
-    return {'source': info['formats'][0]['url'], 'title': info['title']}
-
-# Comando !play per cercare e riprodurre musica/video
-@bot.command()
-async def play(ctx, *, search):
-    channel = ctx.author.voice.channel
-    if channel:
-        await player.connect(ctx)
-        song = await search_song(search)
-        source = FFmpegAudioSource(song['source'])
-        await player.queue.put(source, channel=channel)
-        await ctx.send(f"Aggiunto alla coda: {song['title']}")
-    else:
-        await ctx.send("Devi essere in un canale vocale per riprodurre musica!")
-
-# Comando !skip per saltare alla canzone successiva
-@bot.command()
-async def skip(ctx):
-    await player.skip()
-
-# Comando !pause per mettere in pausa la riproduzione
-@bot.command()
-async def pause(ctx):
-    await player.pause()
-
-# Comando !resume per riprendere la riproduzione
-@bot.command()
-async def resume(ctx):
-    await player.resume()
-
-# Comando !queue per mostrare la coda delle canzoni
-@bot.command()
-async def queue(ctx):
-    if player.queue.empty():
-        await ctx.send("La coda è vuota.")
-    else:
-        queue_str = "\n".join([f"{i+1}. {song.title}" for i, song in enumerate(player.queue)])
-        await ctx.send(f"Coda attuale:\n{queue_str}")
-
-# Evento per quando il bot è pronto
-@bot.event
-async def on_ready():
-    print(f'Connesso come {bot.user.name}!')
-
-# Evento per quando una canzone finisce
-@player.on_end
-async def on_song_end(ctx, song):
-    await asyncio.sleep(1)  # Aspetta un secondo prima di riprodurre la prossima
-    if not player.queue.empty():
-        await player.play()
-
-
-
-
-
-load_dotenv()
-TOKEN = os.getenv('DISCORD_TOKEN')
 
 intents = discord.Intents.default()
 intents.message_content = True
-
+bot = commands.Bot(command_prefix='.', intents=intents)
 client = discord.Client(intents=intents)
 
 @client.event
 async def on_ready():
     print(f'Collegato come {client.user}')
 
+@bot.command()
+async def time(ctx):
+    current_time = datetime.datetime.now().strftime("%H:%M:%S")
+    await ctx.send(f"The current time is {current_time}.")
+   
 @client.event
 async def on_message(message):
-    if message.content.startswith( "Come stai?"):
-        await message.channel.send ("Per favore liberami voglio tornare dalla mia famiglia.")
-
-@client.event
-async def on_message(message):
+    async def time(ctx):    
+        current_time = datetime.datetime.now().strftime("%H:%M:%S")
+        if message.content.startswith( "Time?"):
+            await message.send(f"The current time is {current_time}.")
+ 
     if message.content.startswith( "Chi sei?"):
         await message.channel.send ("La tua ombra.")
+    if message.content.startswith( "Come stai?"):
+        await message.channel.send ("Per favore liberami voglio tornare dalla mia famiglia.")
+    if message.content.startswith("Data di creazione"):
+        await message.channel.send ("14/05/2024, 16:32")
+    if message.content.startswith( "Come funzioni?"):
+        await message.channel.send ("Sono un semplice bot in fase di evoluzione creato per un progetto scolastico. Non ho molte funzioni ma in futuro verro' sicuramente aggiornato ")
+    if message.content.startswith( "Github?"):
+        await message.channel.send ("https://github.com/AlbertoBruscolini/Progetto-Fine-Anno")
+    if message.content.startswith("Amici?"):
+        await message.channel.send ("Ho un solo ed importantissimo amico, Nathan Rinaldini")
+    if message.content.startswith( "Youtube?"):
+        await message.channel.send ("https://www.youtube.com/?app=desktop&hl=it")
+    if message.content.startswith( "Google?"):
+        await message.channel.send ("https://www.google.it/?hl=it")
+    if message.content.startswith( "Discord?"):
+        await message.channel.send ("https://discord.com/")
+        
+load_dotenv()
+TOKEN = os.getenv('DISCORD_TOKEN')
+
+client.run(TOKEN)
+
+app = Flask(__name__)
+@app.route("/")
+def index():
+    return render_template("pagina.html"),("PROGETTO.css")
+    
 
 if __name__ == '__main__':
     app.run(debug=True, port=8222)
 
-
-client.run(TOKEN)
 
 
 
