@@ -13,23 +13,23 @@ Librerie utilizzate
 # Il codice importa diverse librerie Python:
 
 ## os: 
-('import os'): Per interagire con il sistema operativo (ad esempio, per caricare il token Discord da un file .env).
+(import os): Per interagire con il sistema operativo (ad esempio, per caricare il token Discord da un file .env).
 ## discord: 
-Libreria fondamentale per creare bot Discord.
+(import discord): Libreria fondamentale per creare bot Discord.
 ## discord.ext.commands, discord.ext.tasks: 
 Estensioni per gestire comandi e attività pianificate.
 ## pytz:
-Per lavorare con fusi orari (anche se non sembra essere utilizzato attivamente nel codice).
+(import pytz): Per lavorare con fusi orari (anche se non sembra essere utilizzato attivamente nel codice).
 ## requests: 
-Per fare richieste HTTP (non utilizzato nel codice attuale).
+(import requests): Per fare richieste HTTP (non utilizzato nel codice attuale).
 ## dotenv:
-Per caricare variabili d'ambiente da un file .env.
+(import python-dotenv): Per caricare variabili d'ambiente da un file .env.
 ## ast: 
-Per lavorare con l'Abstract Syntax Tree (non utilizzato nel codice attuale).
+(import ast): Per lavorare con l'Abstract Syntax Tree (non utilizzato nel codice attuale).
 ## asyncio:
-Per gestire codice asincrono.
+(import asyncio): Per gestire codice asincrono.
 ## datetime: 
-Per lavorare con date e orari.
+(import datetime): Per lavorare con date e orari.
 
 # Struttura del codice
 
