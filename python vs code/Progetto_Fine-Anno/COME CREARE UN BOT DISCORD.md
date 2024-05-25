@@ -31,10 +31,14 @@ Per far funzionare il tuo bot su un server Discord, devi aggiungere il bot al se
 Copia l'ID del tuo bot Discord dall'interfaccia del Developer Portal.
 Visita l'URL seguente nel tuo browser web, sostituendo <BOT_CLIENT_ID> con l'ID del tuo bot:
 	
-### esempio di ID/URL generato:
+### Esempio di ID/URL generato:
 	https://discord.com/oauth2/authorize?client_id=<BOT_CLIENT_ID>&scope=bot
 	
 Una volta aggiunto al server, il bot risponderà ai comandi che hai definito nel codice.
 
 ## Step 5: Espandi il Bot
 Ora che hai creato un bot base, puoi espanderlo aggiungendo ulteriori comandi, gestendo eventi, utilizzando database e altro ancora. Assicurati di leggere la documentazione di discord.py per sfruttare al meglio tutte le funzionalità offerte dalla libreria.
+
+# ECCO IL BOT ALL'AZIONE DENTRO UN MIO SERVER:
+![Immagine 2024-05-25 200913](https://github.com/AlbertoBruscolini/Progetto-Fine-Anno/assets/147493117/45bfec4b-5856-4b0c-8d03-cca3bf1393fc)
+
