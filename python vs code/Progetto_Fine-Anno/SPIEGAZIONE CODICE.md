@@ -1,4 +1,4 @@
-#Scopo principale#
+# Scopo principale
 
 Il codice definisce un bot Discord in grado di rispondere a determinati messaggi. 
 #Le funzionalità principali includono:#
