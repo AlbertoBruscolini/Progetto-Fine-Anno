@@ -2,8 +2,9 @@
 Creare un bot Discord con Python è abbastanza “semplice”, grazie alla libreria discord.py, che fornisce un'API per interagire con l'API di Discord. Ecco una guida rapida su come farlo:
 ## Step 1: Installazione
 Assicurati di avere Python installato sul tuo sistema. Puoi installare discord.py eseguendo il seguente comando in un terminale o prompt dei comandi:
-pip install discord.py
-	
+```python
+	pip install discord.py
+```
 ## Step 2: Creazione bot Discord
 Vai su Discord Developer Portal e crea una nuova applicazione. Puoi settare il bot come ti pare, l’importante e generare l’URL da copia incollare in una nuova finestra, consentendoti di collegare il bot al tuo account discord e aggiungerlo a qualunque server.  Dopodiché, sotto l'opzione "Bot" nel pannello di sinistra, crea un nuovo bot e ottieni il suo token.
 
