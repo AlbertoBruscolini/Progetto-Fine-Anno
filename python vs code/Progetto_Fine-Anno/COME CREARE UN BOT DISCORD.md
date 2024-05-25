@@ -14,10 +14,10 @@ un esempio di codifica è quella illustrata nel file python contenente il codice
 ![image](https://github.com/AlbertoBruscolini/Progetto-Fine-Anno/assets/147493117/13434318-4522-4611-8daf-f6ebcf66e4fb)
 
 ## Step 3: Esecuzione codice
-Salva lo script Python in un file, ad esempio bot.py, e eseguilo da terminale o prompt dei comandi:
-Copy code
-python (nome del file)
-es) |python bot_discord.py
+Salva lo script Python in un file, ad esempio 	bot.py, e eseguilo da terminale o prompt dei comandi:
+	Copy code
+	python (nome del file)
+	es) |python bot_discord.py
 
 ## Step 4: Aggiungi il Bot al tuo server Discord
 Per far funzionare il tuo bot su un server Discord, devi aggiungere il bot al server. Vai sulla pagina di autorizzazione del tuo bot nel pannello di sviluppo Discord e ottieni l'URL di autorizzazione. Accedi con un account che ha il permesso di aggiungere bot ai server e segui le istruzioni per aggiungere il bot al server.
