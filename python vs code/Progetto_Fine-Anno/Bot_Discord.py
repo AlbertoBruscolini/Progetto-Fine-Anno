@@ -62,7 +62,7 @@ client.run(TOKEN)
 #app = Flask(__name__)
 #@app.route("/")
 #def index():
- #   return render_template("pagina.html"),("PROGETTO.css")    ---->>> FLASK FUNZIONA MA NON E' NECESSARIO AL CODICE PYTHON, PERCIO HTML  E CSS RESTANO A PARTE
+ #   return render_template("pagina.html")    ---->>> FLASK FUNZIONA MA NON E' NECESSARIO AL CODICE PYTHON, PERCIO HTML  E CSS RESTANO A PARTE
     
 
 #if __name__ == '__main__':
