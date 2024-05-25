@@ -14,44 +14,44 @@ Librerie utilizzate
 
 ### os: 
 (import os): Per interagire con il sistema operativo (ad esempio, per caricare il token Discord da un file .env).
-## discord: 
+### discord: 
 (import discord): Libreria fondamentale per creare bot Discord.
-## discord.ext.commands, discord.ext.tasks: 
+### discord.ext.commands, discord.ext.tasks: 
 Estensioni per gestire comandi e attività pianificate.
-## pytz:
+### pytz:
 (import pytz): Per lavorare con fusi orari (anche se non sembra essere utilizzato attivamente nel codice).
-## requests: 
+### requests: 
 (import requests): Per fare richieste HTTP (non utilizzato nel codice attuale).
-## dotenv:
+### dotenv:
 (import python-dotenv): Per caricare variabili d'ambiente da un file .env.
-## ast: 
+### ast: 
 (import ast): Per lavorare con l'Abstract Syntax Tree (non utilizzato nel codice attuale).
-## asyncio:
+### asyncio:
 (import asyncio): Per gestire codice asincrono.
-## datetime: 
+### datetime: 
 (import datetime): Per lavorare con date e orari.
 
 # Struttura del codice
 
-## Intents:
+### Intents:
 
 Imposta gli intents per consentire al bot di ricevere contenuti dei messaggi.
-## Bot e Client:
+### Bot e Client:
 
 Crea un'istanza commands.Bot per gestire i comandi (prefissati da ".").
 Crea un'istanza discord.Client per gli altri eventi.
-## Evento on_ready:
+### Evento on_ready:
 
 Stampa un messaggio quando il bot si connette a Discord.
-## Comando .time:
+### Comando .time:
 
 Definisce il comando .time che restituisce l'ora corrente.
-## Evento on_message:
+### Evento on_message:
 
 Gestisce i messaggi in arrivo:
 Se il messaggio inizia con "Time?", risponde con l'ora corrente.
 Risponde a domande e richieste specifiche con messaggi predefiniti.
-## Caricamento del Token:
+### Caricamento del Token:
 
 Carica il token Discord dal file .env., per poi avviare il bot utilizzando il token.
 
