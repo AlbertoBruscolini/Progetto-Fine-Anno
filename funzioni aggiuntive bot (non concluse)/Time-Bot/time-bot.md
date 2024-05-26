@@ -30,7 +30,7 @@ Definisce un dizionario (continents) che associa i nomi dei continenti (come chi
 Invia un messaggio all'utente chiedendo in quale continente desidera conoscere l'ora.
 ### Attesa della risposta:
 Attende un nuovo messaggio dell'utente nello stesso canale.
-###Verifica della risposta: 
+### Verifica della risposta: 
 Controlla se la risposta dell'utente corrisponde a uno dei continenti nel dizionario.
 ### Se valida:
 -Ottiene l'ora corrente nel fuso orario del continente specificato usando pytz.timezone.
