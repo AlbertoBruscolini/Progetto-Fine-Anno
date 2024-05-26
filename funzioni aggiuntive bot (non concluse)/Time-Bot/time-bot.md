@@ -32,11 +32,11 @@ Invia un messaggio all'utente chiedendo in quale continente desidera conoscere l
 Attende un nuovo messaggio dell'utente nello stesso canale.
 ### Verifica della risposta: 
 Controlla se la risposta dell'utente corrisponde a uno dei continenti nel dizionario.
-### Se valida:
+#### |Se valida:
 -Ottiene l'ora corrente nel fuso orario del continente specificato usando pytz.timezone.
 -Formatta l'ora nel formato HH:MM:SS (ore:minuti:secondi).
 -Invia un messaggio con l'ora al canale.
-#### Se non valida: 
+#### |Se non valida: 
 -Invia un messaggio di errore "Continente non valido".
 
 # Funzionamento Bot
