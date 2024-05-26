@@ -8,8 +8,8 @@ Libreria personalizzata (o rimossa) per gestire la riproduzione audio su Discord
 Una classe che  utilizza FFmpeg (un potente strumento per la manipolazione di audio e video) per creare sorgenti audio da riprodurre.
 # Struttura del Codice
 SPIEGAZIONE DEI COMANDI/FUNZIONI
-## Funzione search_song(search):
-
+# Funzioni 
+    search_song(search):
 Questa funzione prende una stringa di ricerca come input.
 Utilizza youtube_dl per cercare il primo risultato corrispondente su YouTube.
 Estrae l'URL della migliore sorgente audio disponibile e il titolo del video.
