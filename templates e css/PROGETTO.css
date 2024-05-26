@@ -1,0 +1,47 @@
+header{
+    text-align: center;
+    
+}
+
+.main{
+    text-align: right;
+    block-size: 200px;
+    font-size: large;
+}
+
+.block{
+    text-align: left;
+    block-size: 60px;
+    font-size: x-large;
+}
+
+.flex {max-width: 10%}
+.flexx {max-width: 10%}
+
+.content{
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-style: italic;
+    height: 1000px;
+   
+}
+
+button {
+    
+    background-color: blueviolet; 
+    border: 3px solid black; /* Aggiungi un bordo nero di 2 pixel */
+    border-radius: 26px; /* Arrotonda gli angoli */
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block; /* Imposta il display a block per centrare */
+    margin: 0 auto; /* Centra il bottone orizzontalmente */
+    font-size: 20px;
+    cursor: pointer;
+}
+
+        button:hover {
+            background-color:   blueviolet; 
+        }
