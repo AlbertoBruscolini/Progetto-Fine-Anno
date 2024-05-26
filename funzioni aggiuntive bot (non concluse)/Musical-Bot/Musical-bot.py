@@ -8,18 +8,37 @@ async def search_song(search):
         info = ydl.extract_info(f"ytsearch:{search}", download=False)['entries'][0]
     return {'source': info['formats'][0]['url'], 'title': info['title']}
 
-# Comando !play per cercare e riprodurre musica/video
-@bot.command()
-async def play(ctx, *, search):
-    channel = ctx.author.voice.channel
-    if channel:
-        await player.connect(ctx)
-        song = await search_song(search)
-        source = FFmpegAudioSource(song['source'])
-        await player.queue.put(source, channel=channel)
-        await ctx.send(f"Aggiunto alla coda: {song['title']}")
-    else:
-        await ctx.send("Devi essere in un canale vocale per riprodurre musica!")
+--------------------------------------------------------------------------------------------------------------------------
+
+## Comando !play per cercare e riprodurre musica/video
+#@bot.command()
+#async def play(ctx, *, search):
+#    channel = ctx.author.voice.channel
+#    if channel:
+#        await player.connect(ctx)
+#        song = await search_song(search)
+#        source = FFmpegAudioSource(song['source'])
+#        await player.queue.put(source, channel=channel)
+#        await ctx.send(f"Aggiunto alla coda: {song['title']}")
+#    else:
+#        await ctx.send("Devi essere in un canale vocale per riprodurre musica!")
+#                                                                                     --------------------->>>>>>>>> Questi due @bot.command() sono due modi diversi per definire il comando !play per il bot
+
+#@bot.command()
+#async def play(ctx, *, search):
+#    channel = ctx.author.voice.channel
+#    if channel:
+#        voice_client = await channel.connect()
+
+#        song = await search_song(search)  # Usa la tua funzione search_song
+#        source = await discord.FFmpegOpusAudio.from_probe(song['source'])
+
+#        voice_client.play(source, after=lambda e: print(f'Player error: {e}') if e else None)
+#        await ctx.send(f"Aggiunto alla coda: {song['title']}")
+#    else:
+#        await ctx.send("Devi essere in un canale vocale per riprodurre musica!")
+
+-------------------------------------------------------------------------------------------------------------------------
 
 # Comando !skip per saltare alla canzone successiva
 @bot.command()
