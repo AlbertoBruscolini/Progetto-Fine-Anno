@@ -30,13 +30,16 @@ async def time(ctx):
    
 @client.event
 async def on_message(message):
-    async def time(ctx):    
+    async def time():    
         current_time = datetime.datetime.now().strftime("%H:%M:%S")
-        if message.content.startswith( "Time?"):
-            await message.send(f"The current time is {current_time}.")
- 
+        return current_time
+    
+    
     if message.content.startswith( "Chi sei?"):
         await message.channel.send ("La tua ombra.")
+    if message.content.startswith( "Time?"):
+        time = datetime.now()
+        await message.channel.send(f'The current time is {time.strftime("%H:%M:%S")}.')
     if message.content.startswith( "Come stai?"):
         await message.channel.send ("Per favore liberami voglio tornare dalla mia famiglia.")
     if message.content.startswith("Data di creazione"):
